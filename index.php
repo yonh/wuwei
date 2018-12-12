@@ -13,7 +13,7 @@ $result = files($path);
 $result = array_diff($result, ['/index.phpa']);
 echo "<ul>";
 foreach ($result as $item) {
-    echo "<li><a download='".substr($item,1)."' href='".($item)."'>".$item."</a></li>";
+    echo "<li><a download='".substr($item,1)."' href='".($item)."'>".substr($item,1)."</a></li>";
 }
 echo "</ul>";
 
